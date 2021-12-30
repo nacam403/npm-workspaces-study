@@ -5,6 +5,11 @@
  * @format
  */
 
+const path = require("path");
+
+const watchFolders = [path.resolve(__dirname, "../../node_modules")];
+const blockList = [/\/aaa\//, /\/bbb\//];
+
 module.exports = {
   transformer: {
     getTransformOptions: async () => ({
@@ -14,4 +19,9 @@ module.exports = {
       },
     }),
   },
+  resolver: {
+    resolverMainFields: ["react-native", "browser", "module", "main"],
+    blockList,
+  },
+  watchFolders,
 };
