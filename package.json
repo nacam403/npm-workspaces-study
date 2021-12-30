@@ -2,7 +2,10 @@
   "name": "npm-workspaces-study",
   "version": "1.0.0",
   "license": "ISC",
-  "scripts": {},
+  "scripts": {
+    "sample": "npm run sample --workspaces",
+    "sample2": "npm run sample --workspaces --if-present"
+  },
   "workspaces": [
     "packages/*"
   ],
