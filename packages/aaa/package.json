@@ -4,5 +4,8 @@
   "license": "ISC",
   "scripts": {
     "sample": "prettier --version"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0"
   }
 }
