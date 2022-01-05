@@ -5,9 +5,8 @@
  * @format
  */
 
-// ルート直下のmetro.config.jsは必須ではないが、あると少し便利。
-// ルート直下のmetro.config.jsが無いと、metroサーバーの起動は必ずRNプロジェクトのnpm startで行う必要がある。そうしないと、index.jsが見つからないというエラーが出る。
-// ルート直下のmetro.config.jsがあると、別枠のターミナルが立ち上がってmetroサーバーを起動する場合にも対応できる。npm startをせずにnpm run iosを実行した時に便利。
+// metro.config.jsは、ルート直下にだけ存在すればよい。
+// RNプロジェクトの下にmetro.config.jsが無ければ、RNのCLIはルート直下のmetro.config.jsを見てくれる。
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require("path");
